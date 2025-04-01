@@ -23,8 +23,8 @@ use iceberg_catalog::{
         event_publisher::{
             kafka::{KafkaBackend, KafkaConfig},
             nats::NatsBackend,
-            CloudEventBackend, CloudEventsPublisher, CloudEventsPublisherBackgroundTask, Message,
-            TracingPublisher,
+            CloudEventBackend, CloudEventsMessage, CloudEventsPublisher,
+            CloudEventsPublisherBackgroundTask, TracingPublisher,
         },
         health::ServiceHealthProvider,
         task_queue::TaskQueues,
